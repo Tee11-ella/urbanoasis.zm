@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN OASIS — Cabinetry & Space Curation | Lusaka, Zambia</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            espresso: 'var(--color-espresso, #1E140E)',
+                            sand: 'var(--color-sand, #F4EFEA)',
+                            warmbg: 'var(--color-warmbg, #FBF8F5)',
+                            cognac: 'var(--color-cognac, #9A4E2B)',
+                            terracotta: 'var(--color-terracotta, #D15A2A)',
+                            amber: 'var(--color-amber, #E08244)',
+                            wood: 'var(--color-wood, #68432F)',
+                            slate: 'var(--color-slate, #2A3940)',
+                            border: 'var(--color-border, #E6DDD4)'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --color-espresso: #1E140E;
+            --color-sand: #F4EFEA;
+            --color-warmbg: #FBF8F5;
+            --color-cognac: #9A4E2B;
+            --color-terracotta: #D15A2A;
+            --color-amber: #E08244;
+            --color-wood: #68432F;
+            --color-slate: #2A3940;
+            --color-border: #E6DDD4;
+        }
+
+        /* Editorial Typography & Layout */
+        body {
+            background-color: var(--color-warmbg);
+            color: var(--color-espresso);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .font-serif-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            letter-spacing: -0.02em;
+        }
+
+        /* Fluted Slat Wood Background Effect */
+        .fluted-panel-pattern {
+            background-image: repeating-linear-gradient(
+                90deg,
+                rgba(30, 20, 14, 0.04) 0px,
+                rgba(30, 20, 14, 0.04) 12px,
+                transparent 12px,
+                transparent 24px
+            );
+        }
+
+        .fluted-panel-dark {
+            background-image: repeating-linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.05) 0px,
+                rgba(255, 255, 255, 0.05) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--color-sand);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-cognac);
+            border-radius: 4px;
+        }
+
+        .drawer-slide {
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- TOP DOMAIN & CONTACT STATUS BAR WITH TIKTOK & FACEBOOK -->
+    <div class="bg-brand-espresso text-brand-sand text-xs py-2.5 px-4 border-b border-stone-800">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-2">
+            
+            <div class="flex items-center gap-4 flex-wrap justify-center lg:justify-start">
+                <span class="inline-flex items-center gap-1.5 text-brand-amber font-medium">
+                    <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+                    www.urbanoasis.zm
+                </span>
+                <span class="text-stone-600 hidden sm:inline">•</span>
+                <span class="text-stone-300">Registered ZICTA .zm Domain</span>
+            </div>
+
+            <div class="flex items-center gap-5 flex-wrap justify-center">
+                <a href="https://tiktok.com/@urbanoasis.zm" target="_blank" class="hover:text-brand-amber transition flex items-center gap-1.5 text-stone-300">
+                    <i data-lucide="video" class="w-3.5 h-3.5 text-brand-terracotta"></i> TikTok: <span class="font-semibold text-white">urbanoasis.zm</span>
+                </a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a href="https://facebook.com/urbanoasis.zm" target="_blank" class="hover:text-brand-amber transition flex items-center gap-1.5 text-stone-300">
+                    <i data-lucide="facebook" class="w-3.5 h-3.5 text-brand-terracotta"></i> Facebook: <span class="font-semibold text-white">urbanoasis.zm</span>
+                </a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a href="tel:+260779315562" class="hover:text-brand-amber transition flex items-center gap-1 text-stone-300">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> +260 779 315562
+                </a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a href="mailto:urbanoasis.zm@gmail.com" class="hover:text-brand-amber transition flex items-center gap-1 text-stone-300">
+                    <i data-lucide="mail" class="w-3.5 h-3.5"></i> urbanoasis.zm@gmail.com
+                </a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <span class="flex items-center gap-1 text-stone-400">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-terracotta"></i> Lusaka, Zambia
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="sticky top-0 z-40 bg-brand-warmbg/95 backdrop-blur-md border-b border-brand-border transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Dynamic Brand Logo Section -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div id="navLogoContainer" class="h-12 w-auto flex items-center">
+                    <div id="defaultLogo" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-terracotta flex items-center justify-center text-white font-serif font-bold text-xl shadow-md group-hover:scale-105 transition">
+                            UO
+                        </div>
+                        <div>
+                            <span class="font-serif text-2xl font-bold tracking-tight text-brand-espresso block leading-none">URBAN OASIS</span>
+                            <span class="text-[9px] uppercase tracking-[0.25em] text-brand-cognac font-medium">Lusaka • Cabinetry & Joinery</span>
+                        </div>
+                    </div>
+                    <img id="customNavLogoImg" class="h-12 max-w-[200px] object-contain hidden" alt="URBAN OASIS Brand Logo">
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-brand-espresso/80">
+                <a href="#philosophy" class="hover:text-brand-terracotta transition">Philosophy</a>
+                <a href="#showcase" class="hover:text-brand-terracotta transition">Craft Portfolio</a>
+                <a href="#collaborators" class="hover:text-brand-terracotta transition">Collaborators</a>
+                <a href="#customizer" onclick="event.preventDefault(); toggleStudioDrawer();" class="hover:text-brand-terracotta transition flex items-center gap-1 text-brand-cognac">
+                    <i data-lucide="sliders" class="w-4 h-4"></i> Appearance Studio
+                </a>
+                <a href="#contact" class="hover:text-brand-terracotta transition">Contact & Inquiry</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <button onclick="openUploadModal()" class="inline-flex items-center gap-2 bg-brand-espresso text-brand-sand px-4 py-2.5 rounded-lg text-xs font-semibold tracking-wider uppercase hover:bg-brand-cognac transition shadow-sm">
+                    <i data-lucide="plus-circle" class="w-4 h-4 text-brand-amber"></i>
+                    Upload Media
+                </button>
+                <button onclick="toggleStudioDrawer()" class="p-2.5 rounded-lg border border-brand-border bg-brand-sand hover:bg-brand-border transition text-brand-espresso" title="Open Appearance Studio">
+                    <i data-lucide="palette" class="w-5 h-5 text-brand-terracotta"></i>
+                </button>
+                <button onclick="toggleMobileNav()" class="lg:hidden p-2 text-brand-espresso">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileNav" class="hidden lg:hidden border-b border-brand-border bg-brand-warmbg px-6 py-4 space-y-3">
+            <a href="#philosophy" onclick="toggleMobileNav()" class="block py-1 text-base font-medium text-brand-espresso">Philosophy</a>
+            <a href="#showcase" onclick="toggleMobileNav()" class="block py-1 text-base font-medium text-brand-espresso">Craft Portfolio</a>
+            <a href="#collaborators" onclick="toggleMobileNav()" class="block py-1 text-base font-medium text-brand-espresso">Collaborators</a>
+            <a href="#contact" onclick="toggleMobileNav()" class="block py-1 text-base font-medium text-brand-espresso">Contact & Inquiry</a>
+            
+            <div class="pt-2 border-t border-brand-border flex items-center gap-4 text-xs">
+                <a href="https://tiktok.com/@urbanoasis.zm" target="_blank" class="text-brand-terracotta flex items-center gap-1 font-semibold">
+                    <i data-lucide="video" class="w-3.5 h-3.5"></i> TikTok
+                </a>
+                <a href="https://facebook.com/urbanoasis.zm" target="_blank" class="text-brand-terracotta flex items-center gap-1 font-semibold">
+                    <i data-lucide="facebook" class="w-3.5 h-3.5"></i> Facebook
+                </a>
+            </div>
+
+            <button onclick="toggleMobileNav(); toggleStudioDrawer();" class="w-full text-left py-2 text-brand-terracotta font-semibold flex items-center gap-2">
+                <i data-lucide="sliders" class="w-4 h-4"></i> Appearance Studio & Logo Customizer
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-12 pb-20 md:py-28 overflow-hidden fluted-panel-pattern border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Hero Header Text Block -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 pb-8 border-b border-brand-espresso/10 gap-6">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brand-terracotta block mb-2">URBAN OASIS • UNIQUE CRAFTSMANSHIP</span>
+                    <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal leading-[0.95] text-brand-espresso">
+                        BUILD WITH <br><span class="italic font-light text-brand-cognac">PURPOSE.</span>
+                    </h1>
+                </div>
+                <div class="max-w-md">
+                    <p class="text-base sm:text-lg text-stone-700 leading-relaxed font-normal mb-4">
+                        Custom kitchen cabinetry, ribbed wood build features, marble islands, and bespoke living space joinery crafted for Lusaka’s finest residences.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="#showcase" class="inline-flex items-center gap-2 bg-brand-terracotta text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-brand-cognac transition shadow-md">
+                            Explore Portfolio <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+                        </a>
+                        <button onclick="toggleStudioDrawer()" class="inline-flex items-center gap-2 border border-brand-espresso/30 text-brand-espresso px-5 py-3 rounded-lg text-sm font-medium hover:bg-brand-sand transition">
+                            <i data-lucide="sliders" class="w-4 h-4 text-brand-terracotta"></i> Studio Customizer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Feature Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="relative group overflow-hidden rounded-2xl bg-brand-espresso text-brand-sand p-8 flex flex-col justify-between h-[360px] shadow-xl">
+                    <div class="absolute inset-0 opacity-25 fluted-panel-dark pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <span class="text-[10px] tracking-[0.2em] uppercase font-bold text-brand-amber">PILLAR 01</span>
+                        <h3 class="font-serif text-3xl font-light text-white mt-2">Custom Cabinetry & Kitchen Islands</h3>
+                    </div>
+                    <div class="relative z-10 pt-4 border-t border-white/10">
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            Engineered rosewood, matte laminates, fluted timber accents, and soft-closing Blum hardware built to exact space dimensions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl bg-stone-900 border border-brand-border h-[360px] shadow-xl">
+                    <div id="heroMediaDisplay" class="w-full h-full relative">
+                        <div class="w-full h-full bg-stone-800 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
+                            <svg class="absolute inset-0 w-full h-full object-cover opacity-60" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+                                <rect width="600" height="400" fill="#2E1C14"/>
+                                <g stroke="#8B4A24" stroke-width="4">
+                                    <line x1="20" y1="0" x2="20" y2="400"/>
+                                    <line x1="40" y1="0" x2="40" y2="400"/>
+                                    <line x1="60" y1="0" x2="60" y2="400"/>
+                                    <line x1="80" y1="0" x2="80" y2="400"/>
+                                    <line x1="100" y1="0" x2="100" y2="400"/>
+                                    <line x1="120" y1="0" x2="120" y2="400"/>
+                                </g>
+                                <path d="M 200 150 L 580 150 L 580 380 L 200 380 Z" fill="#E8DFD5"/>
+                                <path d="M 220 170 Q 300 240 380 190 T 500 300" stroke="#8C7A6B" stroke-width="2" fill="none"/>
+                            </svg>
+                            <div class="relative z-10 max-w-xs">
+                                <span class="bg-brand-terracotta text-white text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full mb-3 inline-block">
+                                    Lusaka Showcase Project
+                                </span>
+                                <h4 class="font-serif text-2xl text-white font-light mb-2">Dusty Rose & Ribbed Oak Kitchen</h4>
+                                <p class="text-xs text-stone-300 mb-4">Calacatta marble splash, dual integrated wall ovens, and custom wine rack storage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl bg-brand-sand border border-brand-border p-8 flex flex-col justify-between h-[360px] shadow-lg">
+                    <div>
+                        <span class="text-[10px] tracking-[0.2em] uppercase font-bold text-brand-cognac">PILLAR 02</span>
+                        <h3 class="font-serif text-3xl font-light text-brand-espresso mt-2">Bespoke Wall Units & Media Features</h3>
+                    </div>
+                    <div class="space-y-3 border-t border-brand-border/60 pt-4">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-terracotta mt-0.5 shrink-0"></i>
+                            <span class="text-xs text-stone-700">Fluted vertical slat panels & ambient backlighting.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-terracotta mt-0.5 shrink-0"></i>
+                            <span class="text-xs text-stone-700">Integrated quartz waterfall counters & wine display modules.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-terracotta mt-0.5 shrink-0"></i>
+                            <span class="text-xs text-stone-700">Precision Blum motion runners & Gelmar hardware pulls.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section id="philosophy" class="py-20 bg-brand-warmbg border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brand-terracotta block mb-2">CONCEPT & MOOD</span>
+                <h2 class="font-serif text-4xl sm:text-5xl text-brand-espresso font-normal">
+                    Crafting Timeless Room Identities
+                </h2>
+                <p class="text-stone-600 text-sm sm:text-base mt-4">
+                    Our approach bridges tactile natural timbers, sculpted marble veining, and clean geometric layout tailored for modern living in Zambia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-brand-sand rounded-2xl p-8 border border-brand-border flex flex-col justify-between relative hover:shadow-lg transition">
+                    <div>
+                        <span class="text-[11px] font-mono tracking-widest text-brand-cognac uppercase">01 / BALANCE</span>
+                        <h3 class="font-serif text-3xl font-normal text-brand-espresso mt-3 mb-4">Form & Function</h3>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Harmonizing solid timber beams with smooth matte panel surfaces. Every cabinet door opens effortlessly with high-grade motion hardware.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-brand-border flex justify-between items-center text-[11px] text-stone-500">
+                        <span>LUSAKA PROJECT SERIES</span>
+                        <span class="font-serif italic">2026 Edition</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-espresso text-brand-sand rounded-2xl p-8 border border-stone-800 flex flex-col justify-between relative shadow-xl hover:shadow-2xl transition">
+                    <div>
+                        <span class="text-[11px] font-mono tracking-widest text-brand-amber uppercase">02 / COMFORT</span>
+                        <h3 class="font-serif text-3xl font-normal text-white mt-3 mb-4">Atmosphere & Flow</h3>
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            Creating warmth through cognac leather tones, dark marble vein backdrops, recessed perimeter LED coving, and acoustic wood slatting.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-stone-800 flex justify-between items-center text-[11px] text-stone-400">
+                        <span>ROOM HARMONY</span>
+                        <span class="font-serif italic">Blum & Gelmar Fitted</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-sand rounded-2xl p-8 border border-brand-border flex flex-col justify-between relative hover:shadow-lg transition">
+                    <div>
+                        <span class="text-[11px] font-mono tracking-widest text-brand-cognac uppercase">03 / CHARACTER</span>
+                        <h3 class="font-serif text-3xl font-normal text-brand-espresso mt-3 mb-4">Material Expression</h3>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Custom tinted lacquer, warm oak textures, white quartz countertops, and brushed hardware built for lasting durability.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-brand-border flex justify-between items-center text-[11px] text-stone-500">
+                        <span>URBAN OASIS ZM</span>
+                        <span class="font-serif italic">Craftsmanship</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CRAFT PORTFOLIO & MEDIA GALLERY MANAGER -->
+    <section id="showcase" class="py-20 bg-brand-sand/40 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brand-terracotta block mb-2">SHOWCASE PORTFOLIO</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-brand-espresso font-normal">
+                        Featured Cabinetry & Joinery Projects
+                    </h2>
+                    <p class="text-stone-600 text-sm mt-2 max-w-xl">
+                        Explore custom installations built across Lusaka. You can upload your own photos or videos to live-edit this showcase gallery.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="filterGallery('all')" class="gallery-filter active px-4 py-2 rounded-full text-xs font-semibold bg-brand-espresso text-brand-sand transition">
+                        All Projects
+                    </button>
+                    <button onclick="filterGallery('kitchen')" class="gallery-filter px-4 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 hover:bg-brand-sand border border-brand-border transition">
+                        Kitchen Spaces
+                    </button>
+                    <button onclick="filterGallery('living')" class="gallery-filter px-4 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 hover:bg-brand-sand border border-brand-border transition">
+                        Living & Media Joinery
+                    </button>
+                    <button onclick="filterGallery('video')" class="gallery-filter px-4 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 hover:bg-brand-sand border border-brand-border transition flex items-center gap-1.5">
+                        <i data-lucide="video" class="w-3.5 h-3.5 text-brand-terracotta"></i> Video Features
+                    </button>
+                    <button onclick="openUploadModal()" class="px-4 py-2 rounded-full text-xs font-semibold bg-brand-terracotta text-white hover:bg-brand-cognac transition flex items-center gap-1 shadow-sm">
+                        <i data-lucide="plus" class="w-4 h-4"></i> Add Media
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dynamic Project Cards Grid -->
+            <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+
+        </div>
+    </section>
+
+    <!-- COLLABORATORS SECTION -->
+    <section id="collaborators" class="py-20 bg-brand-warmbg border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brand-cognac block mb-2">PRECISION HARDWARE PARTNERS</span>
+                <h2 class="font-serif text-4xl text-brand-espresso font-normal">Official Collaborators</h2>
+                <p class="text-stone-600 text-sm mt-2">
+                    We exclusively integrate world-class hardware, silent soft-close runners, and precision fittings into our woodwork.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Blum Collaborator Card -->
+                <div class="bg-white rounded-2xl p-8 border border-brand-border shadow-sm flex flex-col items-center text-center relative group hover:border-brand-terracotta transition">
+                    <div class="h-20 flex items-center justify-center mb-6 w-full">
+                        <div id="blumLogoDisplay" class="flex items-center gap-3">
+                            <div class="bg-black text-white px-5 py-2.5 rounded font-bold tracking-widest text-2xl font-sans">
+                                blum
+                            </div>
+                        </div>
+                        <img id="customBlumLogoImg" class="h-16 max-w-[220px] object-contain hidden" alt="Blum Logo">
+                    </div>
+                    <h3 class="font-serif text-2xl font-normal text-brand-espresso mb-2">Blum Motion Technologies</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed max-w-sm mb-6">
+                        AVENTOS lift systems, TANDEMBOX runner extensions, and BLUMOTION soft-closing hinges engineered for frictionless cabinet operations.
+                    </p>
+                    <button onclick="toggleStudioDrawer()" class="text-xs font-semibold text-brand-terracotta hover:underline flex items-center gap-1 mt-auto">
+                        <i data-lucide="edit-3" class="w-3.5 h-3.5"></i> Customise Blum Logo
+                    </button>
+                </div>
+
+                <!-- Gelmar Collaborator Card -->
+                <div class="bg-white rounded-2xl p-8 border border-brand-border shadow-sm flex flex-col items-center text-center relative group hover:border-brand-terracotta transition">
+                    <div class="h-20 flex items-center justify-center mb-6 w-full">
+                        <div id="gelmarLogoDisplay" class="flex items-center gap-3">
+                            <div class="border-2 border-stone-900 text-stone-900 px-5 py-2 rounded font-black tracking-widest text-2xl font-sans uppercase bg-stone-50">
+                                GELMAR
+                            </div>
+                        </div>
+                        <img id="customGelmarLogoImg" class="h-16 max-w-[220px] object-contain hidden" alt="Gelmar Logo">
+                    </div>
+                    <h3 class="font-serif text-2xl font-normal text-brand-espresso mb-2">Gelmar Fittings</h3>
+                    <p class="text-xs text-stone-600 leading-relaxed max-w-sm mb-6">
+                        Precision handles, wirework storage accessories, aluminum profile channels, and heavy-duty build joinery hardware.
+                    </p>
+                    <button onclick="toggleStudioDrawer()" class="text-xs font-semibold text-brand-terracotta hover:underline flex items-center gap-1 mt-auto">
+                        <i data-lucide="edit-3" class="w-3.5 h-3.5"></i> Customise Gelmar Logo
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & CONSULTATION INQUIRY -->
+    <section id="contact" class="py-20 bg-brand-espresso text-brand-sand relative overflow-hidden">
+        <div class="absolute inset-0 opacity-15 fluted-panel-dark pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs uppercase tracking-[0.3em] font-bold text-brand-amber block mb-2">GET IN TOUCH</span>
+                        <h2 class="font-serif text-4xl sm:text-5xl text-white font-light">
+                            Start Your Room Curation in Lusaka
+                        </h2>
+                        <p class="text-stone-300 text-sm mt-4 leading-relaxed">
+                            Schedule a workshop consultation or request a custom cabinetry quotation for your residential or commercial build.
+                        </p>
+                    </div>
+
+                    <div class="space-y-5 border-t border-stone-800 pt-8">
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-stone-800 flex items-center justify-center text-brand-terracotta shrink-0">
+                                <i data-lucide="globe" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider text-stone-400 block">Registered Search Domain / DNS</span>
+                                <a href="http://www.urbanoasis.zm" target="_blank" class="text-base text-white font-medium hover:text-brand-amber transition">
+                                    www.urbanoasis.zm
+                                </a>
+                                <p class="text-[11px] text-stone-400 mt-0.5">Pre-registered & configured under ZICTA .zm Registry</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-stone-800 flex items-center justify-center text-brand-terracotta shrink-0">
+                                <i data-lucide="video" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider text-stone-400 block">TikTok Channel</span>
+                                <a href="https://tiktok.com/@urbanoasis.zm" target="_blank" class="text-base text-white font-medium hover:text-brand-amber transition">
+                                    urbanoasis.zm
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-stone-800 flex items-center justify-center text-brand-terracotta shrink-0">
+                                <i data-lucide="facebook" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider text-stone-400 block">Facebook Page</span>
+                                <a href="https://facebook.com/urbanoasis.zm" target="_blank" class="text-base text-white font-medium hover:text-brand-amber transition">
+                                    urbanoasis.zm
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-stone-800 flex items-center justify-center text-brand-terracotta shrink-0">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider text-stone-400 block">Email Address</span>
+                                <a href="mailto:urbanoasis.zm@gmail.com" class="text-base text-white font-medium hover:text-brand-amber transition">
+                                    urbanoasis.zm@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-stone-800 flex items-center justify-center text-brand-terracotta shrink-0">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider text-stone-400 block">Phone / WhatsApp</span>
+                                <a href="tel:+260779315562" class="text-base text-white font-medium hover:text-brand-amber transition">
+                                    +260 779 315562
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-stone-800 flex items-center justify-center text-brand-terracotta shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider text-stone-400 block">Workshop & Studio Location</span>
+                                <span class="text-base text-white font-medium">Lusaka, Zambia</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Inquiry Form Column -->
+                <div class="lg:col-span-7 bg-stone-900/90 p-8 sm:p-10 rounded-2xl border border-stone-800 shadow-2xl">
+                    <h3 class="font-serif text-2xl text-white font-normal mb-6">Request Project Consultation</h3>
+                    
+                    <form id="inquiryForm" onsubmit="handleInquirySubmit(event)" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="e.g. Chileshe Mwewa" class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-terracotta">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">Phone / WhatsApp</label>
+                                <input type="tel" required placeholder="+260..." class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-terracotta">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">Project Type</label>
+                            <select class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-terracotta">
+                                <option>Kitchen Cabinetry & Island Build</option>
+                                <option>Fluted Wood Wall Unit & Media Wall</option>
+                                <option>Room Joinery & Custom Storage</option>
+                                <option>Full Residence Space Curation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">Project Details & Preferences</label>
+                            <textarea rows="4" required placeholder="Describe dimensions, wood finishes, or marble preferences..." class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-terracotta"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-terracotta hover:bg-brand-cognac text-white font-medium py-3.5 rounded-lg text-sm transition shadow-lg flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i> Submit Project Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-stone-900 pb-8 mb-8">
+                
+                <div id="footerLogoContainer" class="flex items-center gap-3">
+                    <div id="footerDefaultLogo" class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-brand-terracotta flex items-center justify-center text-white font-serif font-bold text-lg">
+                            UO
+                        </div>
+                        <span class="font-serif text-xl font-bold tracking-tight text-white">URBAN OASIS</span>
+                    </div>
+                    <img id="customFooterLogoImg" class="h-10 max-w-[180px] object-contain hidden" alt="URBAN OASIS Logo">
+                </div>
+
+                <div class="flex items-center gap-6 text-xs text-stone-300">
+                    <a href="https://tiktok.com/@urbanoasis.zm" target="_blank" class="hover:text-brand-amber transition flex items-center gap-1.5">
+                        <i data-lucide="video" class="w-4 h-4 text-brand-terracotta"></i> TikTok: urbanoasis.zm
+                    </a>
+                    <a href="https://facebook.com/urbanoasis.zm" target="_blank" class="hover:text-brand-amber transition flex items-center gap-1.5">
+                        <i data-lucide="facebook" class="w-4 h-4 text-brand-terracotta"></i> Facebook: urbanoasis.zm
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-stone-400 gap-4">
+                <p>&copy; 2026 URBAN OASIS • Registered DNS Domain: www.urbanoasis.zm • Lusaka, Zambia</p>
+                <div class="flex gap-6">
+                    <a href="#showcase" class="hover:text-white transition">Portfolio</a>
+                    <a href="#collaborators" class="hover:text-white transition">Hardware Collaborators</a>
+                    <a href="mailto:urbanoasis.zm@gmail.com" class="hover:text-white transition">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OUT STUDIO APPEARANCE & MEDIA CUSTOMIZER DRAWER -->
+    <div id="studioDrawerOverlay" onclick="toggleStudioDrawer()" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <aside id="studioDrawer" class="fixed top-0 right-0 bottom-0 w-full sm:w-[450px] bg-brand-warmbg z-50 shadow-2xl border-l border-brand-border transform translate-x-full drawer-slide flex flex-col">
+        
+        <div class="p-6 border-b border-brand-border bg-brand-sand flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="sliders" class="w-5 h-5 text-brand-terracotta"></i>
+                <h3 class="font-serif text-2xl font-bold text-brand-espresso">Studio Appearance</h3>
+            </div>
+            <button onclick="toggleStudioDrawer()" class="p-2 text-stone-500 hover:text-brand-espresso">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-6 space-y-8">
+            
+            <!-- 1. Custom Brand Logo Uploader -->
+            <div class="space-y-3">
+                <h4 class="text-xs uppercase tracking-wider font-bold text-brand-cognac">1. Custom Brand Logo Insertion</h4>
+                <p class="text-xs text-stone-600">Upload your custom logo image file (PNG, SVG, JPG) to replace the default URBAN OASIS header & footer marks in real time.</p>
+                
+                <div class="border-2 border-dashed border-brand-border hover:border-brand-terracotta rounded-xl p-4 text-center cursor-pointer transition bg-white" onclick="document.getElementById('brandLogoInput').click()">
+                    <i data-lucide="upload-cloud" class="w-8 h-8 text-brand-terracotta mx-auto mb-2"></i>
+                    <span class="text-xs font-semibold text-brand-espresso block">Click or Drop Logo File Here</span>
+                    <span class="text-[10px] text-stone-400">Supports PNG, SVG, JPG or Data URL</span>
+                    <input type="file" id="brandLogoInput" accept="image/*" class="hidden" onchange="handleBrandLogoUpload(event)">
+                </div>
+
+                <div id="logoPreviewRow" class="hidden flex items-center justify-between bg-white p-3 rounded-lg border border-brand-border">
+                    <div class="flex items-center gap-3">
+                        <img id="logoPreviewThumbnail" class="h-8 max-w-[100px] object-contain" alt="Uploaded Logo Preview">
+                        <span class="text-xs font-medium text-stone-700">Custom Logo Active</span>
+                    </div>
+                    <button onclick="resetBrandLogo()" class="text-xs text-red-600 font-medium hover:underline">Reset</button>
+                </div>
+            </div>
+
+            <!-- 2. Collaborator Logos Customization (Blum & Gelmar) -->
+            <div class="space-y-4 border-t border-brand-border pt-6">
+                <h4 class="text-xs uppercase tracking-wider font-bold text-brand-cognac">2. Collaborator Logos</h4>
+                
+                <div class="bg-white p-4 rounded-xl border border-brand-border space-y-2">
+                    <label class="text-xs font-semibold text-brand-espresso block">Blum Logo Upload</label>
+                    <input type="file" id="blumLogoInput" accept="image/*" class="text-xs text-stone-600 w-full" onchange="handleCollaboratorLogoUpload(event, 'blum')">
+                    <button onclick="resetCollaboratorLogo('blum')" class="text-[10px] text-red-600 hover:underline block">Reset Blum Logo</button>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl border border-brand-border space-y-2">
+                    <label class="text-xs font-semibold text-brand-espresso block">Gelmar Logo Upload</label>
+                    <input type="file" id="gelmarLogoInput" accept="image/*" class="text-xs text-stone-600 w-full" onchange="handleCollaboratorLogoUpload(event, 'gelmar')">
+                    <button onclick="resetCollaboratorLogo('gelmar')" class="text-[10px] text-red-600 hover:underline block">Reset Gelmar Logo</button>
+                </div>
+            </div>
+
+            <!-- 3. Dynamic Color Scheme Palette Customizer -->
+            <div class="space-y-4 border-t border-brand-border pt-6">
+                <h4 class="text-xs uppercase tracking-wider font-bold text-brand-cognac">3. Vibrant Color Scheme Presets</h4>
+                
+                <div class="grid grid-cols-1 gap-2">
+                    <button onclick="setPalette('terracotta')" class="p-3 rounded-lg border border-brand-border text-left hover:border-brand-terracotta flex items-center justify-between bg-white">
+                        <div>
+                            <span class="text-xs font-semibold block text-brand-espresso">Warm Terracotta & Espresso (Default)</span>
+                            <span class="text-[10px] text-stone-400">Deep timber, cognac leather & sienna</span>
+                        </div>
+                        <div class="flex gap-1">
+                            <span class="w-4 h-4 rounded-full bg-[#1E140E]"></span>
+                            <span class="w-4 h-4 rounded-full bg-[#D15A2A]"></span>
+                            <span class="w-4 h-4 rounded-full bg-[#F4EFEA]"></span>
+                        </div>
+                    </button>
+
+                    <button onclick="setPalette('cognac')" class="p-3 rounded-lg border border-brand-border text-left hover:border-brand-terracotta flex items-center justify-between bg-white">
+                        <div>
+                            <span class="text-xs font-semibold block text-brand-espresso">Cognac & Golden Amber</span>
+                            <span class="text-[10px] text-stone-400">Rich golden oak, warm amber & cream</span>
+                        </div>
+                        <div class="flex gap-1">
+                            <span class="w-4 h-4 rounded-full bg-[#2E1C14]"></span>
+                            <span class="w-4 h-4 rounded-full bg-[#E08244]"></span>
+                            <span class="w-4 h-4 rounded-full bg-[#FAF5EE]"></span>
+                        </div>
+                    </button>
+
+                    <button onclick="setPalette('sand')" class="p-3 rounded-lg border border-brand-border text-left hover:border-brand-terracotta flex items-center justify-between bg-white">
+                        <div>
+                            <span class="text-xs font-semibold block text-brand-espresso">Minimalist Sand & Slate</span>
+                            <span class="text-[10px] text-stone-400">Muted stone, dark slate & warm alabaster</span>
+                        </div>
+                        <div class="flex gap-1">
+                            <span class="w-4 h-4 rounded-full bg-[#2A3940]"></span>
+                            <span class="w-4 h-4 rounded-full bg-[#9A4E2B]"></span>
+                            <span class="w-4 h-4 rounded-full bg-[#F5EFE6]"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="p-4 border-t border-brand-border bg-brand-sand text-center">
+            <button onclick="toggleStudioDrawer()" class="w-full bg-brand-espresso text-brand-sand py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider">
+                Apply & Close Studio
+            </button>
+        </div>
+    </aside>
+
+    <!-- UPLOAD PHOTO & VIDEO MODAL -->
+    <div id="uploadModal" class="fixed inset-0 bg-black/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-warmbg rounded-2xl max-w-xl w-full border border-brand-border shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+            
+            <div class="p-6 border-b border-brand-border bg-brand-sand flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="image-plus" class="w-5 h-5 text-brand-terracotta"></i>
+                    <h3 class="font-serif text-2xl font-bold text-brand-espresso">Upload Photo or Video</h3>
+                </div>
+                <button onclick="closeUploadModal()" class="text-stone-500 hover:text-brand-espresso">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <form onsubmit="handleNewMediaUpload(event)" class="p-6 space-y-5 overflow-y-auto">
+                
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-brand-cognac mb-2">Select Media File</label>
+                    <div class="border-2 border-dashed border-brand-border hover:border-brand-terracotta rounded-xl p-6 text-center cursor-pointer transition bg-white" onclick="document.getElementById('galleryFileInput').click()">
+                        <i data-lucide="upload" class="w-10 h-10 text-brand-terracotta mx-auto mb-2"></i>
+                        <span class="text-sm font-semibold text-brand-espresso block" id="uploadFileStatus">Choose Photo or Video File</span>
+                        <span class="text-xs text-stone-400">Supports JPG, PNG, WEBP, MP4, WEBM, MOV</span>
+                        <input type="file" id="galleryFileInput" accept="image/*,video/*" class="hidden" onchange="updateUploadFileStatus(event)">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-brand-cognac mb-2">Project Title</label>
+                    <input type="text" id="uploadTitle" required placeholder="e.g. Modern Fluted Kitchen Island" class="w-full border border-brand-border rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:border-brand-terracotta">
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-brand-cognac mb-2">Category</label>
+                        <select id="uploadCategory" class="w-full border border-brand-border rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:border-brand-terracotta">
+                            <option value="kitchen">Kitchen Space</option>
+                            <option value="living">Living & Joinery</option>
+                            <option value="video">Video Feature</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-brand-cognac mb-2">Location Tag</label>
+                        <input type="text" id="uploadLocation" value="Lusaka, Zambia" class="w-full border border-brand-border rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:border-brand-terracotta">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-brand-cognac mb-2">Material & Finish Details</label>
+                    <input type="text" id="uploadDesc" placeholder="e.g. Rosewood finish, marble countertops, Blum fittings" class="w-full border border-brand-border rounded-lg px-4 py-2.5 text-sm bg-white focus:outline-none focus:border-brand-terracotta">
+                </div>
+
+                <div class="pt-4 border-t border-brand-border flex justify-end gap-3">
+                    <button type="button" onclick="closeUploadModal()" class="px-5 py-2.5 rounded-lg border border-brand-border text-xs font-semibold text-stone-600 hover:bg-brand-sand">
+                        Cancel
+                    </button>
+                    <button type="submit" class="px-6 py-2.5 rounded-lg bg-brand-terracotta text-white text-xs font-semibold hover:bg-brand-cognac transition shadow">
+                        Add to Showcase
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- LIGHTBOX PREVIEW MODAL -->
+    <div id="lightboxModal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-brand-amber text-3xl z-10">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+
+        <div class="max-w-4xl w-full bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 shadow-2xl flex flex-col md:flex-row">
+            <div id="lightboxMediaContainer" class="w-full md:w-2/3 bg-black min-h-[300px] flex items-center justify-center"></div>
+            <div class="w-full md:w-1/3 p-6 text-white flex flex-col justify-between">
+                <div>
+                    <span id="lightboxCategory" class="text-[10px] uppercase tracking-widest font-bold text-brand-amber block mb-2">Category</span>
+                    <h3 id="lightboxTitle" class="font-serif text-3xl font-light text-white mb-4">Project Title</h3>
+                    <p id="lightboxDesc" class="text-xs text-stone-300 leading-relaxed mb-4">Description details...</p>
+                    <div id="lightboxLocation" class="text-xs text-brand-terracotta flex items-center gap-1">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> <span>Lusaka, Zambia</span>
+                    </div>
+                </div>
+                <div class="border-t border-stone-800 pt-4 mt-6">
+                    <span class="text-[10px] uppercase text-stone-400 tracking-wider block mb-1">Fittings & Hardware</span>
+                    <p class="text-xs text-stone-300">Blum AVENTOS / Gelmar Pull Handles</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        const projectsData = [
+            {
+                id: 'p1',
+                title: 'Dusty Rose & Ribbed Oak Kitchen',
+                category: 'kitchen',
+                isVideo: false,
+                mediaSrc: null,
+                svgFallback: `
+                    <svg viewBox="0 0 500 350" class="w-full h-full object-cover">
+                        <rect width="500" height="350" fill="#AA7973"/>
+                        <rect x="30" y="20" width="440" height="140" fill="#986862" rx="4"/>
+                        <rect x="50" y="30" width="70" height="110" fill="#B78882"/>
+                        <rect x="130" y="30" width="70" height="110" fill="#B78882"/>
+                        <rect x="30" y="170" width="440" height="60" fill="#EAE5DE"/>
+                        <path d="M 40 180 Q 120 220 200 190 T 400 210" stroke="#9A897B" stroke-width="2" fill="none"/>
+                        <rect x="100" y="240" width="300" height="90" fill="#C49A6C"/>
+                        <line x1="120" y1="240" x2="120" y2="330" stroke="#8C653C" stroke-width="3"/>
+                        <line x1="140" y1="240" x2="140" y2="330" stroke="#8C653C" stroke-width="3"/>
+                        <line x1="160" y1="240" x2="160" y2="330" stroke="#8C653C" stroke-width="3"/>
+                        <line x1="180" y1="240" x2="180" y2="330" stroke="#8C653C" stroke-width="3"/>
+                    </svg>`,
+                desc: 'Dusty rose full-height cabinetry, ribbed oak island surround, and marble veined backsplash.',
+                location: 'Lusaka, Zambia'
+            },
+            {
+                id: 'p2',
+                title: 'Midnight Teal & Exposed Timber Beams',
+                category: 'kitchen',
+                isVideo: false,
+                mediaSrc: null,
+                svgFallback: `
+                    <svg viewBox="0 0 500 350" class="w-full h-full object-cover">
+                        <rect width="500" height="350" fill="#243C42"/>
+                        <rect x="0" y="0" width="500" height="40" fill="#8C5832"/>
+                        <line x1="100" y1="0" x2="100" y2="40" stroke="#663C1E" stroke-width="4"/>
+                        <line x1="250" y1="0" x2="250" y2="40" stroke="#663C1E" stroke-width="4"/>
+                        <rect x="20" y="200" width="460" height="130" fill="#1C2E33" rx="4"/>
+                        <rect x="40" y="215" width="100" height="95" fill="#29464D" stroke="#3D626C"/>
+                    </svg>`,
+                desc: 'Deep midnight teal cabinetry complemented by overhead rustic timber beams and glass upper display units.',
+                location: 'Lusaka, Zambia'
+            },
+            {
+                id: 'p3',
+                title: 'Fluted Media Wall & Dark Marble Backdrop',
+                category: 'living',
+                isVideo: false,
+                mediaSrc: null,
+                svgFallback: `
+                    <svg viewBox="0 0 500 350" class="w-full h-full object-cover">
+                        <rect width="500" height="350" fill="#241B18"/>
+                        <rect x="260" y="20" width="220" height="310" fill="#F0EBE5"/>
+                        <g stroke="#D4CBC0" stroke-width="2">
+                            <line x1="280" y1="20" x2="280" y2="330"/>
+                            <line x1="300" y1="20" x2="300" y2="330"/>
+                            <line x1="320" y1="20" x2="320" y2="330"/>
+                        </g>
+                        <rect x="30" y="50" width="220" height="200" fill="#141414"/>
+                        <path d="M 40 60 Q 120 180 200 100" stroke="#C88E52" stroke-width="1.5" fill="none"/>
+                        <rect x="30" y="260" width="240" height="50" fill="#DFD7CF" rx="4"/>
+                    </svg>`,
+                desc: 'Custom floating low bench, textured vertical slat wall, and gold-veined dark marble TV backdrop.',
+                location: 'Lusaka, Zambia'
+            },
+            {
+                id: 'p4',
+                title: 'Minimalist White & LED Suspension Island',
+                category: 'kitchen',
+                isVideo: false,
+                mediaSrc: null,
+                svgFallback: `
+                    <svg viewBox="0 0 500 350" class="w-full h-full object-cover">
+                        <rect width="500" height="350" fill="#F7F5F2"/>
+                        <rect x="0" y="0" width="500" height="45" fill="#2D211A"/>
+                        <rect x="150" y="55" width="200" height="6" fill="#111"/>
+                        <rect x="130" y="80" width="100" height="180" fill="#FFFFFF" stroke="#DDD"/>
+                        <rect x="80" y="220" width="340" height="100" fill="#EFECE6" stroke="#D5D0C7"/>
+                    </svg>`,
+                desc: 'High-gloss white lacquered wall units, double integrated eye-level ovens, and quartz island.',
+                location: 'Lusaka, Zambia'
+            },
+            {
+                id: 'p5',
+                title: 'Warm Oak Timber & Integrated Appliances',
+                category: 'kitchen',
+                isVideo: false,
+                mediaSrc: null,
+                svgFallback: `
+                    <svg viewBox="0 0 500 350" class="w-full h-full object-cover">
+                        <rect width="500" height="350" fill="#EAE5DE"/>
+                        <rect x="130" y="30" width="240" height="80" fill="#8C5832"/>
+                        <rect x="230" y="240" width="80" height="20" fill="#111"/>
+                        <rect x="50" y="210" width="70" height="120" fill="#FFFFFF" stroke="#CCC"/>
+                    </svg>`,
+                desc: 'Upper oak timber doors and white base drawers with integrated black under-mount sink.',
+                location: 'Lusaka, Zambia'
+            },
+            {
+                id: 'p6',
+                title: 'Contemporary Sunlit Slate Joinery',
+                category: 'living',
+                isVideo: false,
+                mediaSrc: null,
+                svgFallback: `
+                    <svg viewBox="0 0 500 350" class="w-full h-full object-cover">
+                        <rect width="500" height="350" fill="#D3D0CA"/>
+                        <rect x="20" y="40" width="80" height="260" fill="#69635F"/>
+                        <rect x="340" y="40" width="120" height="260" fill="#7A7470"/>
+                        <rect x="50" y="230" width="390" height="50" fill="#9C9590"/>
+                    </svg>`,
+                desc: 'Minimalist wall plastering paired with slate gray joinery and warm accent perimeter LED lighting.',
+                location: 'Lusaka, Zambia'
+            },
+            {
+                id: 'p7',
+                title: 'Waterfall Marble Island & Rose Cabinetry',
+                category: 'kitchen',
+                isVideo: false,
+                mediaSrc: null,
+                svgFallback: `
+                    <svg viewBox="0 0 500 350" class="w-full h-full object-cover">
+                        <rect width="500" height="350" fill="#FAF6F0"/>
+                        <rect x="0" y="40" width="500" height="80" fill="#996E64"/>
+                        <rect x="135" y="200" width="250" height="120" fill="#EDE7DF" stroke="#D1C9BE" stroke-width="2"/>
+                    </svg>`,
+                desc: 'Full waterfall marble edge island with fluted timber front paneling and integrated appliances.',
+                location: 'Lusaka, Zambia'
+            },
+            {
+                id: 'p8',
+                title: 'Deep Indigo Island with Woven Cubbies',
+                category: 'kitchen',
+                isVideo: false,
+                mediaSrc: null,
+                svgFallback: `
+                    <svg viewBox="0 0 500 350" class="w-full h-full object-cover">
+                        <rect width="500" height="350" fill="#F4EFE9"/>
+                        <rect x="160" y="10" width="200" height="40" fill="#8C5B39"/>
+                        <rect x="40" y="170" width="400" height="140" fill="#1E3238" rx="4"/>
+                        <rect x="115" y="190" width="80" height="100" fill="#6B4B32"/>
+                    </svg>`,
+                desc: 'Custom deep indigo island with woven storage basket cubbies, polished marble surface, and suspended timber rack.',
+                location: 'Lusaka, Zambia'
+            }
+        ];
+
+        let activeFilter = 'all';
+
+        function renderGallery() {
+            const grid = document.getElementById('galleryGrid');
+            grid.innerHTML = '';
+
+            const itemsToDisplay = projectsData.filter(item => {
+                if (activeFilter === 'all') return true;
+                if (activeFilter === 'video') return item.isVideo;
+                return item.category === activeFilter;
+            });
+
+            if (itemsToDisplay.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full py-12 text-center text-stone-500 bg-white rounded-2xl border border-brand-border">
+                        <i data-lucide="image-off" class="w-10 h-10 mx-auto mb-2 text-stone-400"></i>
+                        <p class="text-sm font-medium">No projects found in this category.</p>
+                        <button onclick="openUploadModal()" class="mt-3 text-xs text-brand-terracotta font-semibold hover:underline">
+                            Upload a photo or video
+                        </button>
+                    </div>`;
+                lucide.createIcons();
+                return;
+            }
+
+            itemsToDisplay.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl overflow-hidden border border-brand-border shadow-sm hover:shadow-md transition group flex flex-col justify-between";
+
+                let mediaContent = '';
+                if (item.mediaSrc) {
+                    if (item.isVideo) {
+                        mediaContent = `<video src="${item.mediaSrc}" controls class="w-full h-52 object-cover"></video>`;
+                    } else {
+                        mediaContent = `<img src="${item.mediaSrc}" alt="${item.title}" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500">`;
+                    }
+                } else {
+                    mediaContent = `<div class="w-full h-52 relative overflow-hidden bg-stone-100 flex items-center justify-center">${item.svgFallback}</div>`;
+                }
+
+                card.innerHTML = `
+                    <div class="relative overflow-hidden cursor-pointer" onclick="openLightbox('${item.id}')">
+                        ${mediaContent}
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-brand-espresso/80 backdrop-blur-md text-brand-sand text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full">
+                                ${item.category === 'kitchen' ? 'Kitchen Space' : (item.category === 'living' ? 'Living Joinery' : 'Video')}
+                            </span>
+                        </div>
+                        ${item.isVideo ? `
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition">
+                                <div class="w-12 h-12 rounded-full bg-brand-terracotta text-white flex items-center justify-center shadow-lg">
+                                    <i data-lucide="play" class="w-5 h-5 fill-current ml-0.5"></i>
+                                </div>
+                            </div>
+                        ` : ''}
+                    </div>
+
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-normal text-brand-espresso mb-1 group-hover:text-brand-terracotta transition">
+                                ${item.title}
+                            </h3>
+                            <p class="text-xs text-stone-600 line-clamp-2 mb-3 leading-relaxed">
+                                ${item.desc}
+                            </p>
+                        </div>
+
+                        <div class="pt-3 border-t border-brand-border flex items-center justify-between text-[11px] text-stone-500">
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="map-pin" class="w-3 h-3 text-brand-terracotta"></i> ${item.location}
+                            </span>
+
+                            <label class="text-brand-cognac hover:text-brand-terracotta font-semibold cursor-pointer flex items-center gap-1" title="Upload file for this card">
+                                <i data-lucide="upload" class="w-3 h-3"></i> Replace
+                                <input type="file" accept="image/*,video/*" class="hidden" onchange="handleInlineCardReplace(event, '${item.id}')">
+                            </label>
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+
+            lucide.createIcons();
+        }
+
+        function filterGallery(cat) {
+            activeFilter = cat;
+            document.querySelectorAll('.gallery-filter').forEach(btn => {
+                btn.classList.remove('bg-brand-espresso', 'text-brand-sand');
+                btn.classList.add('bg-white', 'text-stone-700');
+            });
+            event.currentTarget.classList.remove('bg-white', 'text-stone-700');
+            event.currentTarget.classList.add('bg-brand-espresso', 'text-brand-sand');
+            renderGallery();
+        }
+
+        function handleInlineCardReplace(e, itemId) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const fileUrl = URL.createObjectURL(file);
+            const isVideo = file.type.startsWith('video');
+
+            const item = projectsData.find(p => p.id === itemId);
+            if (item) {
+                item.mediaSrc = fileUrl;
+                item.isVideo = isVideo;
+                if (isVideo) item.category = 'video';
+                renderGallery();
+                showNotification(`Updated "${item.title}" with uploaded media!`);
+            }
+        }
+
+        function openUploadModal() {
+            document.getElementById('uploadModal').classList.remove('hidden');
+        }
+
+        function closeUploadModal() {
+            document.getElementById('uploadModal').classList.add('hidden');
+        }
+
+        function updateUploadFileStatus(e) {
+            const file = e.target.files[0];
+            if (file) {
+                document.getElementById('uploadFileStatus').innerText = `Selected: ${file.name}`;
+            }
+        }
+
+        function handleNewMediaUpload(e) {
+            e.preventDefault();
+            const fileInput = document.getElementById('galleryFileInput');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                showNotification('Please select a photo or video file.', 'error');
+                return;
+            }
+
+            const title = document.getElementById('uploadTitle').value;
+            const category = document.getElementById('uploadCategory').value;
+            const location = document.getElementById('uploadLocation').value;
+            const desc = document.getElementById('uploadDesc').value;
+
+            const isVideo = file.type.startsWith('video');
+            const mediaUrl = URL.createObjectURL(file);
+
+            const newItem = {
+                id: 'user_' + Date.now(),
+                title: title,
+                category: category,
+                isVideo: isVideo,
+                mediaSrc: mediaUrl,
+                desc: desc || 'Custom uploaded project media.',
+                location: location || 'Lusaka, Zambia'
+            };
+
+            projectsData.unshift(newItem);
+            renderGallery();
+            closeUploadModal();
+            showNotification('New project media successfully uploaded!');
+            e.target.reset();
+            document.getElementById('uploadFileStatus').innerText = 'Choose Photo or Video File';
+        }
+
+        function openLightbox(id) {
+            const item = projectsData.find(p => p.id === id);
+            if (!item) return;
+
+            const modal = document.getElementById('lightboxModal');
+            const container = document.getElementById('lightboxMediaContainer');
+            
+            document.getElementById('lightboxTitle').innerText = item.title;
+            document.getElementById('lightboxDesc').innerText = item.desc;
+            document.getElementById('lightboxCategory').innerText = item.category.toUpperCase();
+
+            if (item.mediaSrc) {
+                if (item.isVideo) {
+                    container.innerHTML = `<video src="${item.mediaSrc}" controls autoplay class="max-h-[75vh] w-auto"></video>`;
+                } else {
+                    container.innerHTML = `<img src="${item.mediaSrc}" class="max-h-[75vh] w-auto object-contain">`;
+                }
+            } else {
+                container.innerHTML = `<div class="w-full h-80 flex items-center justify-center p-4">${item.svgFallback}</div>`;
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+            document.getElementById('lightboxMediaContainer').innerHTML = '';
+        }
+
+        function toggleStudioDrawer() {
+            const drawer = document.getElementById('studioDrawer');
+            const overlay = document.getElementById('studioDrawerOverlay');
+
+            if (drawer.classList.contains('translate-x-full')) {
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        function handleBrandLogoUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const logoUrl = event.target.result;
+                
+                document.getElementById('defaultLogo').classList.add('hidden');
+                const navImg = document.getElementById('customNavLogoImg');
+                navImg.src = logoUrl;
+                navImg.classList.remove('hidden');
+
+                document.getElementById('footerDefaultLogo').classList.add('hidden');
+                const footerImg = document.getElementById('customFooterLogoImg');
+                footerImg.src = logoUrl;
+                footerImg.classList.remove('hidden');
+
+                document.getElementById('logoPreviewRow').classList.remove('hidden');
+                document.getElementById('logoPreviewThumbnail').src = logoUrl;
+
+                showNotification('Custom URBAN OASIS Brand Logo applied!');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function resetBrandLogo() {
+            document.getElementById('defaultLogo').classList.remove('hidden');
+            document.getElementById('customNavLogoImg').classList.add('hidden');
+            document.getElementById('footerDefaultLogo').classList.remove('hidden');
+            document.getElementById('customFooterLogoImg').classList.add('hidden');
+            document.getElementById('logoPreviewRow').classList.add('hidden');
+            document.getElementById('brandLogoInput').value = '';
+            showNotification('Reset to default URBAN OASIS mark.');
+        }
+
+        function handleCollaboratorLogoUpload(e, brand) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const logoUrl = event.target.result;
+                if (brand === 'blum') {
+                    document.getElementById('blumLogoDisplay').classList.add('hidden');
+                    const img = document.getElementById('customBlumLogoImg');
+                    img.src = logoUrl;
+                    img.classList.remove('hidden');
+                } else if (brand === 'gelmar') {
+                    document.getElementById('gelmarLogoDisplay').classList.add('hidden');
+                    const img = document.getElementById('customGelmarLogoImg');
+                    img.src = logoUrl;
+                    img.classList.remove('hidden');
+                }
+                showNotification(`Updated ${brand.toUpperCase()} logo emblem!`);
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function resetCollaboratorLogo(brand) {
+            if (brand === 'blum') {
+                document.getElementById('blumLogoDisplay').classList.remove('hidden');
+                document.getElementById('customBlumLogoImg').classList.add('hidden');
+            } else if (brand === 'gelmar') {
+                document.getElementById('gelmarLogoDisplay').classList.remove('hidden');
+                document.getElementById('customGelmarLogoImg').classList.add('hidden');
+            }
+            showNotification(`Reset ${brand.toUpperCase()} logo.`);
+        }
+
+        function setPalette(preset) {
+            const root = document.documentElement;
+            if (preset === 'terracotta') {
+                root.style.setProperty('--color-espresso', '#1E140E');
+                root.style.setProperty('--color-sand', '#F4EFEA');
+                root.style.setProperty('--color-warmbg', '#FBF8F5');
+                root.style.setProperty('--color-cognac', '#9A4E2B');
+                root.style.setProperty('--color-terracotta', '#D15A2A');
+                root.style.setProperty('--color-amber', '#E08244');
+            } else if (preset === 'cognac') {
+                root.style.setProperty('--color-espresso', '#2E1C14');
+                root.style.setProperty('--color-sand', '#FAF5EE');
+                root.style.setProperty('--color-warmbg', '#FFFDF9');
+                root.style.setProperty('--color-cognac', '#B25E2B');
+                root.style.setProperty('--color-terracotta', '#E08244');
+                root.style.setProperty('--color-amber', '#F0A500');
+            } else if (preset === 'sand') {
+                root.style.setProperty('--color-espresso', '#2A3940');
+                root.style.setProperty('--color-sand', '#F5EFE6');
+                root.style.setProperty('--color-warmbg', '#FAF8F5');
+                root.style.setProperty('--color-cognac', '#8B4A24');
+                root.style.setProperty('--color-terracotta', '#9A4E2B');
+                root.style.setProperty('--color-amber', '#C85A28');
+            }
+            showNotification(`Applied ${preset.toUpperCase()} color scheme!`);
+        }
+
+        function showNotification(msg) {
+            const toast = document.createElement('div');
+            toast.className = "fixed bottom-6 right-6 bg-brand-espresso text-brand-sand px-5 py-3 rounded-xl shadow-2xl z-50 text-xs font-semibold flex items-center gap-2 border border-brand-amber transition transform translate-y-4 opacity-0";
+            toast.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> ${msg}`;
+            document.body.appendChild(toast);
+            lucide.createIcons();
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-4', 'opacity-0');
+            }, 50);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-4');
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        function toggleMobileNav() {
+            document.getElementById('mobileNav').classList.toggle('hidden');
+        }
+
+        function handleInquirySubmit(e) {
+            e.preventDefault();
+            showNotification('Project inquiry successfully sent to urbanoasis.zm@gmail.com!');
+            e.target.reset();
+        }
+
+        window.onload = function() {
+            lucide.createIcons();
+            renderGallery();
+        };
+    </script>
+</body>
+</html>
